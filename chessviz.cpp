@@ -6,9 +6,8 @@ void out_board_consol(char board[8][8])
     int i, j;
     for (i = 7; i > -1; i--) {
         cout << i + 1 << " ";
-        for (j = 0; j < 8; j++) {
+        for (j = 0; j < 8; j++)
             cout << board[i][j] << " ";
-        }
         cout << endl;
     }
     cout << "  ";
@@ -19,7 +18,6 @@ void out_board_consol(char board[8][8])
 
 int main()
 {
-    int i, j; // for cycles
     char board[8][8] = {{'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
                         {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
                         {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
